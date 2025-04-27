@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutor</title>
+    <link rel="stylesheet" href="./styling.css"/>
+</head>
+<body>
+
+
+    <section class="hero-section">
+      <div class="intro">
+            <h1>Riya Gupta</h1>
+          <div class="headshot"> 
+             <img src="IMG-20250425-WA0005.jpg" alt="photos" height="200px">
+          </div>
+          <div class="para"
+            <p>Teacher • Workoholic • Fitness Freak </p> 
+          </div> 
+      </div>
+    </section>
+
+
+    
+    
+    <nav>
+        <ul class="links">
+          <li><a href="#" onclick="loadPage('about.html')">About me</a></li>
+          <li><a href="#" onclick="loadPage('education.html')">Education</a></li>
+          <li><a href="#" onclick="loadPage('experience.html')">Experience</a></li>
+          <li><a href="#" onclick="loadPage('testimonial.html')">Testimonials</a></li>
+          <li><a href="#" onclick="loadPage('contact.html')">Contact</a></li>
+          <li><a href="#" onclick="loadPage('form.html')">Form</a></li>
+        </ul>
+    
+    </nav>
+
+    <div id="content"></div>
+
+    <!-- javascript -->
+
+    <script>
+        function loadPage(page) {
+          fetch(page)
+            .then(response => response.text())
+            .then(data => {
+              document.getElementById('content').innerHTML = data;
+              document.getElementById('content').scrollIntoView({behavior:'smooth'})
+            })
+            .catch(error => {
+              document.getElementById('content').innerHTML = "<p>Error loading page.</p>";
+              console.error("Error:", error);
+            });
+        }
+    </script>
+
+ 
+ <footer>
+   <p>© 2025 Riya Gupta. All rights reserved.</p>
+ </footer>
+
+
+   
+
+    
+
+</body>
+</html>

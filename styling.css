@@ -1,0 +1,345 @@
+body { font-family: Arial; margin: 0;
+       background-color: #ceb3f5;       
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ceb3f5;
+  font-size: clamp(14px, 2vw, 18px);
+}
+
+.hero-section h1 {
+    display: flex;
+    justify-content: center;
+    padding: 0px 30px;
+    font-size: 250%;
+    align-items: center;
+    font-style: normal;
+    font-family: "Rubik Scribble", system-ui;
+/* Riya Gupta */
+}
+
+.hero-section .headshot {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    /* image */
+}
+
+.headshot img {
+    border-radius: 100%;
+    width: 300px;
+    height: 300px;
+    max-width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    /* image sizing */
+}
+
+.hero-section .para{
+    text-align: center;
+    font-style: bold;
+    font-family: "Alkatra", system-ui;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 50px;
+    margin-bottom: 75px;
+    /* for line under image */
+}
+
+
+.para {
+  font-family: monospace;
+  font-size: 2em;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid black; /* fake blinking cursor (come again)*/
+  
+  animation: typing 2s steps(30) forwards, blink-caret 5s step-end infinite;
+}
+
+@keyframes typing {
+  from { clip-path: inset(0 100% 0 0); }
+  to { clip-path: inset(0 0 0 0); } /* Adjust ch units to match your text length */
+}
+
+@keyframes blink-caret {
+  50% { border-color: transparent; }
+}
+
+  
+nav {
+  margin-top: 1px;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #ceb3f5;
+  gap: 20px;
+  overflow: hidden;
+  padding: 0;
+  margin: 0;
+}
+nav li a {
+  float: left;
+  color: #0b0606;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+}
+nav a:hover {
+  background-color: #c08fdc;
+  color: black;
+}
+
+#content {
+    padding: 20px;
+  }
+
+  /* About me */
+
+.about-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 14px 16px;
+    border-radius: 12px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #333;
+}
+
+
+
+.about-box {
+    text-align: justify;
+    margin-top: 10px;
+    background-color: aliceblue;
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
+    font-size: 20px;
+    padding: 20px;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+    border-radius: 10px;
+
+}
+
+.about-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* About me */
+
+
+
+
+  /* Education */
+
+  .edu-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .edu-box {
+    flex: 0 0 calc(50% - 20px);
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    box-sizing: border-box;
+  }
+  
+  .edu-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  .edu-box h3 {
+    margin-top: 0;
+    color: #2c3e50;
+  
+  
+    /* about.education */
+}
+ 
+/* Heading of all bars */
+h2 {
+  font-size: 36px;
+  color: #4B0082; /* Deep purple */
+  text-align: center;
+  margin-bottom: 30px;
+  position: relative;
+  font-weight: bold;
+}
+
+h2::after {
+  content: '';
+  width: 80px;
+  height: 4px;
+  background-color: #4B0082;
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+/* Heading of all bars */
+
+/* Experience */
+
+.exp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.exp-box {
+  background: white;
+  padding: 20px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 600px;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.exp-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.exp-box h4 {
+  margin-bottom: 10px;
+  color: #4B0082; /* Dark purple color */
+  font-size: 22px;
+}
+
+.exp-box p {
+  margin: 5px 0;
+  font-size: 16px;
+  color: #333;
+}
+
+.exp-box strong {
+  color: #222;
+  
+}
+/* Experience */
+
+/* testimonil */
+
+.about-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+/* Styling each testimonial */
+.test-box {
+  flex: 0 0 calc(50% - 20px); /* Two boxes in a row */
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-sizing: border-box;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* Hover effect */
+.test-box:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Heading inside each testimonial */
+.test-box h3 {
+  margin-top: 0;
+  color: #2c3e50;
+}
+
+/* Text inside each testimonial */
+.test-box p {
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Responsive: for tablets and mobiles */
+@media (max-width: 768px) {
+  .test-box {
+    flex: 0 0 100%; /* Full width */
+  }
+}
+/* testimonial */
+
+/* Contact */
+
+.con-container {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.con-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  margin: 15px auto;
+  padding: 20px;
+  height: 70px;
+  width: 320px;
+  background-color: #ffffff;
+  color: #0b0606;
+  border-radius: 12px;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.con-box:hover {
+  transform: translateY(-5px);
+  background-color: #c08fdc; /* Light purple hover */
+}
+
+/* contact */
+
+/* mobile friendly */
+@media (max-width: 768px) {
+  .intro h1 {
+    font-size: 28px;
+  }
+
+  .para p {
+    font-size: 16px;
+  }
+
+  .links ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .links ul li a {
+    font-size: 16px;
+  }
+}
+/* mobile friendly */
+
+
+
+
+
+  
+
+
+
